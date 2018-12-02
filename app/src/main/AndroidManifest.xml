@@ -46,7 +46,9 @@
         <activity
             android:name=".example.beender.BeenderSignInTwoActivity"
             android:theme="@style/BeenderNoActionBar" />
-        <activity android:name=".example.simple.SimpleActivity"></activity>
+        <activity
+            android:name=".example.simple.SimpleActivity"
+            android:theme="@style/BeenderNoActionBar" />
     </application>
 
 </manifest>
