@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.danilserbin.motionlayoutexample.example.erc.DrawerContent xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    android:layout_height="match_parent"
+    android:layout_gravity="start"
+    android:background="@drawable/background"
+    android:clickable="true"
+    android:descendantFocusability="beforeDescendants"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    app:layoutDescription="@xml/transition_erc_menu">
+
+    <TextView
+        android:id="@+id/dtvLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="52dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="@string/your_email"
+        app:layout_constraintBottom_toTopOf="@+id/btnExit"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:text="pak@smedialink.com" />
+
+    <Button
+        android:id="@+id/btnExit"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginRight="21dp"
+        android:layout_marginBottom="@dimen/small_spacing"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:text="@string/btn_exit"
+        app:layout_constraintBottom_toTopOf="@+id/vDivider"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/btnSettings"
+        app:layout_constraintTop_toBottomOf="@+id/dtvLogin" />
+
+    <Button
+        android:id="@+id/btnSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:text="@string/btn_settings"
+        app:layout_constraintLeft_toRightOf="@+id/btnExit"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnExit" />
+
+    <View
+        android:id="@+id/vDivider"
+        android:layout_width="284dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="@dimen/big_spacing"
+        android:layout_marginLeft="@dimen/big_spacing"
+        android:background="@color/divider"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnExit" />
+
+    <TextView
+        android:id="@+id/dTvPersonalAccount"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="44dp"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/big_spacing"
+        android:paddingEnd="@dimen/big_spacing"
+        android:text="@string/personal_accounts"
+        app:layout_constraintBottom_toTopOf="@+id/dTvMeteringDevices"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vDivider"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+        android:id="@+id/dTvMeteringDevices"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/big_spacing"
+        android:paddingEnd="@dimen/big_spacing"
+        android:text="@string/metering_devices"
+        app:layout_constraintBottom_toTopOf="@+id/dTvManagePersonalAccounts"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dTvPersonalAccount" />
+
+    <TextView
+        android:id="@+id/dTvManagePersonalAccounts"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/big_spacing"
+        android:paddingEnd="@dimen/big_spacing"
+        android:text="@string/management_of_personal_account"
+        app:layout_constraintBottom_toTopOf="@+id/dTvAbout"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dTvMeteringDevices" />
+
+    <TextView
+        android:id="@+id/dTvAbout"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/big_spacing"
+        android:paddingEnd="@dimen/big_spacing"
+        android:text="@string/about"
+        app:layout_constraintBottom_toTopOf="@+id/dTvSupport"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dTvManagePersonalAccounts" />
+
+    <TextView
+        android:id="@+id/dTvSupport"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/big_spacing"
+        android:paddingEnd="@dimen/big_spacing"
+        android:text="@string/support"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dTvAbout" />
+
+</com.example.danilserbin.motionlayoutexample.example.erc.DrawerContent>

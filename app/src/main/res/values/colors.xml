@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#5a85d7</color>
+    <color name="colorPrimaryDark">#5077C1</color>
+    <color name="colorAccent">#5a85d7</color>
+
+    <color name="hint">#60000000</color>
+
+    <color name="disabledColor">#0f000000</color>
+    <color name="web">#ff5800</color>
+    <color name="vk">#507299</color>
+    <color name="facebook">#3b5998</color>
+
+    <color name="divider">#616161</color>
+    <color name="color_grey">#89000000</color>
+    <color name="color_orange">#ff5800</color>
+
+    <color name="light_blue">#a6bde9</color>
+
+    <color name="disable_white">#b2ffffff</color>
+</resources>

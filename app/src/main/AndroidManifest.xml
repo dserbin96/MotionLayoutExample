@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.danilserbin.motionlayoutexample">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".test.one.BaseOneActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".test.one.BaseTwoActivity" />
+        <activity android:name=".test.two.ColorActivity" />
+        <activity android:name=".test.two.ImageActivity" />
+        <activity android:name=".test.two.ColorTwoActivity" />
+        <activity android:name=".test.two.KeyFramesActivity" />
+        <activity
+            android:name=".test.three.CoordinatorActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:name=".test.three.DrawerActivity" />
+        <activity android:name=".test.three.viewpager.ViewPagerActivity" />
+        <activity android:name=".test.four.PositionActivity" />
+        <activity android:name=".test.four.ArcMotionAndroid" />
+        <activity android:name=".test.four.EasingActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".example.erc.ERCMenuActivity"
+            android:theme="@style/ErcActonBar" />
+        <activity
+            android:name=".example.erc.ERCSignInActivity"
+            android:theme="@style/ErcActonBar" />
+        <activity
+            android:name=".example.beender.BeenderSignInActivity"
+            android:theme="@style/BeenderNoActionBar" />
+        <activity
+            android:name=".example.beender.BeenderSignInTwoActivity"
+            android:theme="@style/BeenderNoActionBar" />
+        <activity android:name=".example.simple.SimpleActivity"></activity>
+    </application>
+
+</manifest>

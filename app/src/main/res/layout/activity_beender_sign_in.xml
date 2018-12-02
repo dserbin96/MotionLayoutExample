@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.motion.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layoutDescription="@xml/transition_sign_in_beender"
+    tools:context=".example.beender.BeenderSignInActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="@string/image"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background_beender"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_extra"
+        android:drawableTop="@drawable/logo"
+        android:text="@string/for_people_who_hate_online_dating"
+        app:layout_constraintBottom_toTopOf="@+id/btnFacebook"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <com.example.danilserbin.motionlayoutexample.example.beender.FacebookButton
+        android:id="@+id/btnFacebook"
+        style="@style/SocialButtonStyle"
+        android:layout_marginBottom="@dimen/margin"
+        android:alpha="1"
+        android:text="@string/login_with_facebook"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/btnInstagram"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:layout_constraintWidth_max="300dp" />
+
+    <com.example.danilserbin.motionlayoutexample.example.beender.InstagrammButton
+        android:id="@+id/btnInstagram"
+        style="@style/SocialButtonStyle"
+        android:layout_marginBottom="@dimen/margin"
+        android:alpha="1"
+        android:text="@string/login_with_instagram"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/btnLinkedin"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnFacebook"
+        app:layout_constraintWidth_max="300dp" />
+
+    <com.example.danilserbin.motionlayoutexample.example.beender.LinkedinButton
+        android:id="@+id/btnLinkedin"
+        style="@style/SocialButtonStyle"
+        android:layout_marginBottom="@dimen/margin"
+        android:alpha="1"
+        android:text="@string/login_with_linkedin"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/btnGooglePlus"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnInstagram"
+        app:layout_constraintWidth_max="300dp" />
+
+    <com.example.danilserbin.motionlayoutexample.example.beender.GooglePlusButton
+        android:id="@+id/btnGooglePlus"
+        style="@style/SocialButtonStyle"
+        android:alpha="1"
+        android:text="@string/login_with_google"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/tvTerms"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnLinkedin"
+        app:layout_constraintWidth_max="300dp" />
+
+    <TextView
+        android:id="@+id/tvAge"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:alpha="1"
+        android:text="@string/i_am_18_years_old_or_older"
+        android:textColor="@android:color/black"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/rbOne"
+        app:layout_constraintTop_toBottomOf="@+id/tvTerms" />
+
+    <TextView
+        android:id="@+id/tvTerms"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin"
+        android:alpha="1"
+        android:autoLink="web"
+        android:text="@string/terms_and_conditions"
+        android:textColor="@android:color/black"
+        android:textColorLink="@android:color/black"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/tvAge"
+        app:layout_constraintStart_toEndOf="@+id/rbTwo"
+        app:layout_constraintTop_toBottomOf="@+id/btnGooglePlus" />
+
+    <RadioButton
+        android:id="@+id/rbOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:alpha="1"
+        android:layout_marginStart="@dimen/margin"
+        app:layout_constraintBottom_toBottomOf="@+id/tvAge"
+        app:layout_constraintStart_toStartOf="@+id/btnGooglePlus"
+        app:layout_constraintTop_toTopOf="@+id/tvAge" />
+
+    <RadioButton
+        android:id="@+id/rbTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="1"
+        android:layout_marginStart="@dimen/margin"
+        app:layout_constraintBottom_toBottomOf="@+id/tvTerms"
+        app:layout_constraintStart_toStartOf="@+id/btnGooglePlus"
+        app:layout_constraintTop_toTopOf="@+id/tvTerms" />
+</android.support.constraint.motion.MotionLayout>

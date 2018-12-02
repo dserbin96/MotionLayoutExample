@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        motion:constraintSetEnd="@id/end"
+        motion:constraintSetStart="@id/start"/>
+
+    <ConstraintSet android:id="@id/end">
+        <Constraint
+            android:id="@id/dTvPersonalAccount"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="44dp"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/big_spacing"
+            android:paddingEnd="@dimen/big_spacing"
+            android:text="@string/personal_accounts"
+            motion:layout_constraintBottom_toTopOf="@+id/dTvMeteringDevices"
+            motion:layout_constraintHorizontal_bias="0.0"
+            motion:layout_constraintLeft_toLeftOf="parent"
+            motion:layout_constraintRight_toRightOf="parent"
+            motion:layout_constraintTop_toBottomOf="@+id/vDivider"
+            motion:layout_constraintVertical_bias="0.0"
+            motion:layout_constraintVertical_chainStyle="packed" />
+
+        <Constraint
+            android:id="@id/dTvMeteringDevices"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/big_spacing"
+            android:paddingEnd="@dimen/big_spacing"
+            android:text="@string/metering_devices"
+            motion:layout_constraintBottom_toTopOf="@+id/dTvManagePersonalAccounts"
+            motion:layout_constraintHorizontal_bias="0.0"
+            motion:layout_constraintLeft_toLeftOf="parent"
+            motion:layout_constraintRight_toRightOf="parent"
+            motion:layout_constraintTop_toBottomOf="@+id/dTvPersonalAccount" />
+
+        <Constraint
+            android:id="@id/dTvManagePersonalAccounts"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/big_spacing"
+            android:paddingEnd="@dimen/big_spacing"
+            android:text="@string/management_of_personal_account"
+            motion:layout_constraintBottom_toTopOf="@+id/dTvAbout"
+            motion:layout_constraintHorizontal_bias="0.0"
+            motion:layout_constraintLeft_toLeftOf="parent"
+            motion:layout_constraintRight_toRightOf="parent"
+            motion:layout_constraintTop_toBottomOf="@+id/dTvMeteringDevices" />
+
+        <Constraint
+            android:id="@id/dTvAbout"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/big_spacing"
+            android:paddingEnd="@dimen/big_spacing"
+            android:text="@string/about"
+            motion:layout_constraintBottom_toTopOf="@+id/dTvSupport"
+            motion:layout_constraintHorizontal_bias="0.0"
+            motion:layout_constraintLeft_toLeftOf="parent"
+            motion:layout_constraintRight_toRightOf="parent"
+            motion:layout_constraintTop_toBottomOf="@+id/dTvManagePersonalAccounts" />
+
+        <Constraint
+            android:id="@id/dTvSupport"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/big_spacing"
+            android:paddingEnd="@dimen/big_spacing"
+            android:text="@string/support"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintHorizontal_bias="0.0"
+            motion:layout_constraintLeft_toLeftOf="parent"
+            motion:layout_constraintRight_toRightOf="parent"
+            motion:layout_constraintTop_toBottomOf="@+id/dTvAbout" />
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@id/start">
+        <Constraint
+            android:id="@id/dTvPersonalAccount"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="44dp"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/big_spacing"
+            android:paddingEnd="@dimen/big_spacing"
+            android:text="@string/personal_accounts"
+            android:rotation="90"
+            motion:layout_constraintBottom_toTopOf="@+id/dTvMeteringDevices"
+            motion:layout_constraintHorizontal_bias="0.0"
+            motion:layout_constraintLeft_toLeftOf="parent"
+            motion:layout_constraintRight_toRightOf="parent"
+            motion:layout_constraintTop_toBottomOf="@+id/vDivider"
+            motion:layout_constraintVertical_bias="0.0"
+            motion:layout_constraintVertical_chainStyle="packed" />
+
+        <Constraint
+            android:id="@id/dTvMeteringDevices"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/big_spacing"
+            android:paddingEnd="@dimen/big_spacing"
+            android:text="@string/metering_devices"
+            android:rotation="90"
+            motion:layout_constraintBottom_toTopOf="@+id/dTvManagePersonalAccounts"
+            motion:layout_constraintHorizontal_bias="0.0"
+            motion:layout_constraintLeft_toLeftOf="parent"
+            motion:layout_constraintRight_toRightOf="parent"
+            motion:layout_constraintTop_toBottomOf="@+id/dTvPersonalAccount" />
+
+        <Constraint
+            android:id="@id/dTvManagePersonalAccounts"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/big_spacing"
+            android:paddingEnd="@dimen/big_spacing"
+            android:text="@string/management_of_personal_account"
+            android:rotation="90"
+            motion:layout_constraintBottom_toTopOf="@+id/dTvAbout"
+            motion:layout_constraintHorizontal_bias="0.0"
+            motion:layout_constraintLeft_toLeftOf="parent"
+            motion:layout_constraintRight_toRightOf="parent"
+            motion:layout_constraintTop_toBottomOf="@+id/dTvMeteringDevices" />
+
+        <Constraint
+            android:id="@id/dTvAbout"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/big_spacing"
+            android:paddingEnd="@dimen/big_spacing"
+            android:text="@string/about"
+            android:rotation="90"
+            motion:layout_constraintBottom_toTopOf="@+id/dTvSupport"
+            motion:layout_constraintHorizontal_bias="0.0"
+            motion:layout_constraintLeft_toLeftOf="parent"
+            motion:layout_constraintRight_toRightOf="parent"
+            motion:layout_constraintTop_toBottomOf="@+id/dTvManagePersonalAccounts" />
+
+        <Constraint
+            android:id="@id/dTvSupport"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/big_spacing"
+            android:paddingEnd="@dimen/big_spacing"
+            android:text="@string/support"
+            android:rotation="90"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintHorizontal_bias="0.0"
+            motion:layout_constraintLeft_toLeftOf="parent"
+            motion:layout_constraintRight_toRightOf="parent"
+            motion:layout_constraintTop_toBottomOf="@+id/dTvAbout" />
+    </ConstraintSet>
+
+</MotionScene>

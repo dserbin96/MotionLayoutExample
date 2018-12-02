@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="very_big_spacing">36dp</dimen>
+    <dimen name="big_spacing">16dp</dimen>
+    <dimen name="big_spacing_24">16dp</dimen>
+    <dimen name="small_spacing">8dp</dimen>
+    <dimen name="very_small_spacing">4dp</dimen>
+    <dimen name="button_height_normal">54dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="large_vertical_margin">16dp</dimen>
+    <dimen name="selectable_view_height">48dp</dimen>
+
+    <dimen name="month_widget_height">48dp</dimen>
+    <dimen name="month_item_width">92dp</dimen>
+    <dimen name="expandable_personal_account_height">221dp</dimen>
+
+    <dimen name="md_personal_account_item_height">52dp</dimen>
+    <dimen name="scale_item_height">80dp</dimen>
+    <dimen name="edit_md_val_width">80dp</dimen>
+
+    <dimen name="item_height_medium">80dp</dimen>
+    <dimen name="item_height_small">48dp</dimen>
+    <dimen name="selectable_text_height">24dp</dimen>
+
+    <dimen name="details_md_edit_width">200dp</dimen>
+
+    <dimen name="add_pa_drop_down_height">200dp</dimen>
+
+    <!--Text size-->
+    <dimen name="text_size">16sp</dimen>
+
+    <dimen name="margin_extra">24dp</dimen>
+    <dimen name="margin">16dp</dimen>
+
+    <dimen name="social_button_height">72dp</dimen>
+    <dimen name="padding_social">32dp</dimen>
+</resources>

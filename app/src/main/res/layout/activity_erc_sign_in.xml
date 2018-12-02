@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.motion.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/contentView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    android:splitMotionEvents="false"
+    app:layoutDescription="@xml/transition_sign_in_erc">
+
+    <Button
+        android:id="@+id/btnSignInTest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/background_circle_button_blue"
+        android:text="@string/sign_in_btn_text" />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/metLogin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/login_hint"
+        android:inputType="text" />
+
+    <ImageButton
+        android:id="@+id/idTooglePasswordInputType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/big_spacing"
+        android:layout_marginRight="@dimen/big_spacing"
+        android:background="@android:color/transparent"
+        app:srcCompat="@drawable/ic_visibility_off_black_24dp" />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/metPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/big_spacing"
+        android:layout_marginBottom="8dp"
+        android:layout_weight="1"
+        android:hint="@string/password_hint"
+        android:inputType="textPassword|textNoSuggestions"
+        app:met_floatingLabel="highlight" />
+
+    <ImageView
+        android:id="@+id/idArrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:rotation="0"
+        app:srcCompat="@drawable/ic_keyboard_arrow_right_black_24dp" />
+
+
+</android.support.constraint.motion.MotionLayout>

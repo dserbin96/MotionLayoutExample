@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        motion:constraintSetEnd="@id/end"
+        motion:constraintSetStart="@id/start"
+        motion:duration="1000">
+        <OnClick
+            motion:mode="transitionToEnd"
+            motion:target="@id/text" />
+
+    </Transition>
+
+    <ConstraintSet android:id="@+id/start">
+        <Constraint
+            android:id="@+id/imageView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:contentDescription="@string/image"
+            android:scaleType="centerCrop"
+            android:src="@drawable/background_beender"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent" />
+
+        <Constraint
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_extra"
+            android:drawableTop="@drawable/logo"
+            android:text="@string/for_people_who_hate_online_dating"
+            motion:layout_constraintBottom_toTopOf="@+id/btnFacebook"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintVertical_chainStyle="packed" />
+
+        <Constraint
+            android:id="@+id/btnFacebook"
+            style="@style/SocialButtonStyle"
+            android:layout_marginBottom="@dimen/margin"
+            android:text="@string/login_with_facebook"
+            android:visibility="invisible"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintLeft_toLeftOf="parent"
+            motion:layout_constraintRight_toRightOf="parent"
+            motion:layout_constraintVertical_chainStyle="packed"
+            motion:layout_constraintWidth_max="300dp" />
+
+        <Constraint
+            android:id="@+id/btnInstagram"
+            style="@style/SocialButtonStyle"
+            android:layout_marginBottom="@dimen/margin"
+            android:text="@string/login_with_instagram"
+            android:visibility="invisible"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintLeft_toLeftOf="parent"
+            motion:layout_constraintRight_toRightOf="parent"
+            motion:layout_constraintWidth_max="300dp" />
+
+        <Constraint
+            android:id="@+id/btnLinkedin"
+            style="@style/SocialButtonStyle"
+            android:layout_marginBottom="@dimen/margin"
+            android:text="@string/login_with_linkedin"
+            android:visibility="invisible"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintLeft_toLeftOf="parent"
+            motion:layout_constraintRight_toRightOf="parent"
+            motion:layout_constraintWidth_max="300dp" />
+
+        <Constraint
+            android:id="@+id/btnGooglePlus"
+            style="@style/SocialButtonStyle"
+            android:text="@string/login_with_google"
+            android:visibility="invisible"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintLeft_toLeftOf="parent"
+            motion:layout_constraintRight_toRightOf="parent"
+            motion:layout_constraintWidth_max="300dp" />
+
+        <Constraint
+            android:id="@+id/tvAge"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:alpha="0"
+            android:text="@string/i_am_18_years_old_or_older"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintLeft_toRightOf="@+id/cbAge"
+            motion:layout_constraintStart_toStartOf="@+id/btnGooglePlus" />
+
+        <Constraint
+            android:id="@+id/tvTerms"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:alpha="0"
+            android:autoLink="web"
+            android:text="@string/terms_and_conditions"
+            android:textColor="@android:color/black"
+            android:textColorLink="@android:color/black"
+            android:textSize="14sp"
+            motion:layout_constraintBottom_toTopOf="@+id/tvAge"
+            motion:layout_constraintLeft_toRightOf="@+id/cbTerms"
+            motion:layout_constraintStart_toStartOf="@+id/btnGooglePlus" />
+
+        <Constraint
+            android:id="@id/rbOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:alpha="0"
+            motion:layout_constraintBottom_toBottomOf="@+id/tvAge"
+            motion:layout_constraintStart_toStartOf="@+id/btnGooglePlus"
+            motion:layout_constraintTop_toTopOf="@+id/tvAge" />
+
+        <Constraint
+            android:id="@id/rbTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:alpha="0"
+            motion:layout_constraintBottom_toBottomOf="@+id/tvTerms"
+            motion:layout_constraintStart_toStartOf="@+id/btnGooglePlus"
+            motion:layout_constraintTop_toTopOf="@+id/tvTerms" />
+
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+        <Constraint
+            android:id="@id/imageView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:contentDescription="@string/image"
+            android:scaleType="centerCrop"
+            android:src="@drawable/background_beender"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent" />
+
+        <Constraint
+            android:id="@id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_extra"
+            android:layout_marginBottom="@dimen/margin_extra"
+            android:drawableTop="@drawable/logo"
+            android:text="@string/for_people_who_hate_online_dating"
+            motion:layout_constraintBottom_toTopOf="@+id/btnFacebook"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintVertical_chainStyle="packed" />
+
+        <Constraint
+            android:id="@id/btnFacebook"
+            style="@style/SocialButtonStyle"
+            android:layout_marginBottom="@dimen/margin"
+            android:alpha="1"
+            android:text="@string/login_with_facebook"
+            android:visibility="visible"
+            motion:layout_constraintBottom_toTopOf="@+id/btnInstagram"
+            motion:layout_constraintLeft_toLeftOf="parent"
+            motion:layout_constraintRight_toRightOf="parent"
+            motion:layout_constraintTop_toBottomOf="@+id/text"
+            motion:layout_constraintVertical_chainStyle="packed"
+            motion:layout_constraintWidth_max="300dp" />
+
+        <Constraint
+            android:id="@id/btnInstagram"
+            style="@style/SocialButtonStyle"
+            android:layout_marginBottom="@dimen/margin"
+            android:alpha="1"
+            android:text="@string/login_with_instagram"
+            android:visibility="visible"
+            motion:layout_constraintBottom_toTopOf="@+id/btnLinkedin"
+            motion:layout_constraintLeft_toLeftOf="parent"
+            motion:layout_constraintRight_toRightOf="parent"
+            motion:layout_constraintTop_toBottomOf="@+id/btnFacebook"
+            motion:layout_constraintWidth_max="300dp" />
+
+        <Constraint
+            android:id="@id/btnLinkedin"
+            style="@style/SocialButtonStyle"
+            android:layout_marginBottom="@dimen/margin"
+            android:alpha="1"
+            android:text="@string/login_with_linkedin"
+            android:visibility="visible"
+            motion:layout_constraintBottom_toTopOf="@+id/btnGooglePlus"
+            motion:layout_constraintLeft_toLeftOf="parent"
+            motion:layout_constraintRight_toRightOf="parent"
+            motion:layout_constraintTop_toBottomOf="@+id/btnInstagram"
+            motion:layout_constraintWidth_max="300dp" />
+
+        <Constraint
+            android:id="@id/btnGooglePlus"
+            style="@style/SocialButtonStyle"
+            android:alpha="1"
+            android:text="@string/login_with_google"
+            android:visibility="visible"
+            motion:layout_constraintBottom_toTopOf="@+id/tvTerms"
+            motion:layout_constraintLeft_toLeftOf="parent"
+            motion:layout_constraintRight_toRightOf="parent"
+            motion:layout_constraintTop_toBottomOf="@+id/btnLinkedin"
+            motion:layout_constraintWidth_max="300dp" />
+
+        <TextView
+            android:id="@id/tvAge"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:alpha="1"
+            android:text="@string/i_am_18_years_old_or_older"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintStart_toEndOf="@+id/rbOne"
+            motion:layout_constraintTop_toBottomOf="@+id/tvTerms" />
+
+        <TextView
+            android:id="@id/tvTerms"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin"
+            android:alpha="1"
+            android:autoLink="web"
+            android:text="@string/terms_and_conditions"
+            android:textColor="@android:color/black"
+            android:textColorLink="@android:color/black"
+            android:textSize="14sp"
+            motion:layout_constraintBottom_toTopOf="@+id/tvAge"
+            motion:layout_constraintStart_toEndOf="@+id/rbTwo"
+            motion:layout_constraintTop_toBottomOf="@+id/btnGooglePlus" />
+
+        <RadioButton
+            android:id="@id/rbOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:alpha="1"
+            android:layout_marginStart="@dimen/margin"
+            motion:layout_constraintBottom_toBottomOf="@+id/tvAge"
+            motion:layout_constraintStart_toStartOf="@+id/btnGooglePlus"
+            motion:layout_constraintTop_toTopOf="@+id/tvAge" />
+
+        <RadioButton
+            android:id="@id/rbTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="1"
+            android:layout_marginStart="@dimen/margin"
+            motion:layout_constraintBottom_toBottomOf="@+id/tvTerms"
+            motion:layout_constraintStart_toStartOf="@+id/btnGooglePlus"
+            motion:layout_constraintTop_toTopOf="@+id/tvTerms" />
+    </ConstraintSet>
+
+</MotionScene>

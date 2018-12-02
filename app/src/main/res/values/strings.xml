@@ -1,0 +1,179 @@
+<resources>
+
+    <!--Project-->
+    <string name="app_name">MotionLayoutExample</string>
+    <string name="android_dev">Android Dev</string>
+    <string name="ios_dev">IOS Dev</string>
+    <string name="frontend_dev">Frontend Dev</string>
+    <string name="backend_dev">Backend Dev</string>
+
+
+    <!--ERC-->
+
+    <!--StartActivity-->
+    <string name="sign_in_btn_text">Войти</string>
+    <string name="sign_up_btn_text">Зарегистрироваться</string>
+    <string name="share_string">Поделиться</string>
+
+    <string name="unexpected_error">Непредвиденная ошибка</string>
+    <string name="network_error">Ошибка сети. Проверьте подключение</string>
+    <string name="timeout_error">Время ожидания запроса истекло</string>
+
+    <!--Register-->
+    <string name="phone_hint">Номер телефона</string>
+    <string name="sms_code_hint">Код подтверждения</string>
+    <string name="email_hint">E-mail адрес</string>
+    <string name="password_hint">Пароль</string>
+    <string name="sign_up_resend_code">Запросить код еще раз</string>
+    <string name="check_phone">Проверьте введенный номер телефона</string>
+    <string name="check_email">Проверьте введенный email</string>
+    <string name="not_receive_code">Не получили код?</string>
+
+    <string name="phone_number_label">Вам будет отправлено СМС с кодом подтверждения</string>
+    <string name="sms_code_label">На ваш номер телефона был отправлен код подтверждения</string>
+    <string name="email_label">На указанный адрес электронной почты будет отправлен код подтверждения</string>
+    <string name="email_code_label">На ваш e-mail был отправлен код подтверждения</string>
+    <string name="password_label">Не менее 6 символов</string>
+
+    <string name="sms_code_timer_text" formatted="false">Запросить код еще раз \n через %02d:%02d</string>
+
+    <string name="next_step_text">Далее</string>
+
+    <string name="progress_dialog_msg">Загрузка</string>
+    <string name="phone_exist_dialog_msg">Пользователь с таким номером телефона уже зарегистрирован</string>
+    <string name="email_exist_dialog_msg">Пользователь с таким email уже зарегистрирован</string>
+
+    <string name="sign_in_with_phone_text">Войти с этим номером телефона</string>
+    <string name="sign_in_with_email_text">Войти с этим email</string>
+
+    <string name="positive_button_msg">ок</string>
+    <string name="title_activity_confirm_sms_code">ConfirmSmsCodeActivity</string>
+    <string name="confirm_email_validation_error">Введен некорректный e-mail</string>
+
+
+    <!--Login-->
+    <string name="login_hint">Телефон или email</string>
+    <string name="btn_login">Войти</string>
+    <string name="btn_forget_password">Забыли пароль?</string>
+    <string name="login_validation_error_message">Неверный логин или пароль</string>
+
+    <!--Restore password-->
+    <string name="restore_password_login_hint">Номер телефона или e-mail</string>
+    <string name="restore_password_login_label">Вам будет отправлен код сброса пароля</string>
+    <string name="restore_password_login_validation_error">Введен некорректный логин</string>
+    <string name="restore_password_sms_code_label">На ваш номер телефона был отправлен код для сброса пароля</string>
+
+    <!--AboutActivity-->
+    <string name="call_to_support"> 2–147-700 </string>
+    <string name="write_to_support">техподдержка</string>
+
+    <!--MainAccountActivity-->
+    <string name="btn_exit">Выйти</string>
+    <string name="btn_settings">Настройки</string>
+    <string name="personal_accounts">Лицевые счета</string>
+    <string name="metering_devices">Показания приборов учета</string>
+    <string name="management_of_personal_account">Управление лицевыми счетами</string>
+    <string name="about">О программе</string>
+    <string name="support">Техническая поддержка</string>
+
+    <!--PersonalAccounts-->
+    <string name="delete_personal_account">удалить</string>
+    <string name="cancel">отменить</string>
+    <string name="delete_dialog_content">Удалить лицевой счет из списка?</string>
+    <string name="personal_accounts_empty">У вас пока нет лицевых счетов</string>
+
+    <!--AddPersonalAccount-->
+    <string name="add_personal_account_info">Вы можете получить доступ к сервисам приложения, активировав свой лицевой счет</string>
+    <string name="input_code_activation_hint">Введите код активации</string>
+    <string name="add_personal_account_label">Код активации размещен в вашей квитанции на оплату коммунальных услуг</string>
+    <string name="personal_account_exist">Данный лицевой счет уже есть в списке</string>
+    <string name="have_not_activation_code">У меня нет кода активации</string>
+    <string name="have_activation_code">У меня есть код активации</string>
+    <string name="input_address">  Введите адрес</string>
+    <string name="city_hint">Город</string>
+    <string name="street_hint">Улица</string>
+    <string name="house_hint">Дом</string>
+    <string name="apartment_hint">Квартира</string>
+    <string name="add_personal_account_btn">добавить</string>
+    <string name="add_personal_account_by_address_lbl">Вам будет предоставлен частичный доступ к лицевому счету. Для получения полного доступа введите код активации.</string>
+
+    <!--DetailsMD-->
+    <string name="details_md_alias_hint">Название прибора учета</string>
+    <string name="details_md_date">Следующая поверка \n %s</string>
+
+    <!--MeteringDevices-->
+    <string name="expandable_add_personal_account_btn">добавить лицевой счет</string>
+    <string name="metering_devices_empty">Нет действующих приборов учета</string>
+    <string name="empty_value">Не передавались</string>
+    <string name="add_value">Добавить</string>
+    <string name="md_use_more_label">Используйте больше возможностей</string>
+    <string name="md_use_more_ref"><u>Активировать лицевой счет</u></string>
+    <string name="md_pa_closed">Лицевой счет закрыт, показания не принимаются</string>
+    <string name="md_value_validation_exception"><u>Некорректное значение</u></string>
+
+
+    <!--ManagePersonalAccounts-->
+    <string name="empty_personal_account">У вас пока нет лицевых счетов</string>
+    <string name="grant_access">Предоставить доступ</string>
+    <string name="grant_access_label">Ограничьте или предоставьте доступ</string>
+    <string name="grant_access_button">Отправить</string>
+    <string name="grant_access_dialog_content">Вы можете пердоставить доступ к этому лицевому счету другим пользователям, сообщив им код активащии %s</string>
+    <string name="close_button">Закрыть</string>
+    <string name="close_access_button">Закрыть доступ</string>
+    <string name="close_access_dialog_content">Вы действительно хотите закрыть доступ к ЛС для пользователя %s</string>
+    <string name="increase_access_label">
+        Если вы являетесь собственником, обратитесь в ближайшее отделение ЕРЦ и получите возможность управлять доступом к лицевому счету
+    </string>
+
+    <!--Settings-->
+    <string name="user_name_hint">Пожалуйста представьтесь</string>
+    <string name="settings_email_label">E-MAIL</string>
+    <string name="settings_phone_label">НОМЕР ТЕЛЕФОНА</string>
+    <string name="settings_notifications_label">УВЕДОМЛЕНИЯ</string>
+    <string name="settings_change_password">изменить пароль</string>
+    <string name="settings_about_metering">О передаче показаний</string>
+
+    <!--Support-->
+    <string name="support_email_hint">Ваш e-mail для связи</string>
+    <string name="support_question_hint">Ваш вопрос</string>
+    <string name="support_send_btn">отправить</string>
+    <string name="support_email_empty_error">Введите e-mail</string>
+    <string name="support_question_empty_error">Введите ваш вопрос</string>
+    <string name="support_question_sended">Ваше обращение зарегистрировано. Ответ будет отправлен на указанный адрес электронной почты</string>
+
+    <!--Activate PA-->
+    <string name="activate_pa_btn"> Активировать лицевой счет</string>
+
+    <!--EditPassword-->
+    <string name="edit_password_old_password_hint">Введите старый пароль</string>
+    <string name="edit_password_new_password_hint">Придумайте и введите пароль</string>
+    <string name="edit_password_btn">Изменить пароль</string>
+    <string name="edit_password_validation_error">Некорректный формат пароля</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="your_email">ваш e-mail</string>
+
+    <string name="terms_and_conditions">I have read and agree to Beender\'s \n <a style="color: black" href="file:///android_asset/terms_of_use.html">Terms and conditions</a></string>
+    <string name="i_am_18_years_old_or_older">I am 18 years old or older</string>
+    <string name="for_people_who_hate_online_dating">For people who hate online dating!</string>
+
+    <string name="login_with_facebook">Login with Facebook</string>
+    <string name="login_with_google">Login with Google</string>
+    <string name="login_with_instagram">Login with Instagram</string>
+    <string name="login_with_linkedin">Login with Linkedin</string>
+    <string name="erc_sign_in">ЕРЦ sign in</string>
+    <string name="erc_menu">ЕРЦ menu</string>
+    <string name="beender_singn_in">Beender singn in</string>
+    <string name="image">Изображение</string>
+    <string name="eight">Восемь</string>
+    <string name="google">google</string>
+    <string name="facebook">facebook</string>
+    <string name="beender_sign_in_two">Beender sign in two</string>
+    <string name="simple_example">Простой пример</string>
+
+</resources>

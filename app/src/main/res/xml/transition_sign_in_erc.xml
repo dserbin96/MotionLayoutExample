@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        motion:constraintSetEnd="@id/end"
+        motion:constraintSetStart="@id/start"
+        motion:duration="1000">
+
+        <OnClick
+            motion:mode="transitionToEnd"
+            motion:target="@id/btnSignInTest" />
+
+    </Transition>
+
+    <ConstraintSet android:id="@+id/start">
+
+        <Constraint
+            android:id="@id/btnSignInTest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/background_circle_button_blue"
+            android:text="@string/sign_in_btn_text"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent" />
+
+        <Constraint
+            android:id="@id/metLogin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/big_spacing"
+            android:layout_marginRight="@dimen/big_spacing"
+            android:alpha="0"
+            android:hint="@string/login_hint"
+            android:visibility="invisible"
+            android:inputType="text"
+            motion:layout_constraintBottom_toTopOf="@+id/metPassword"
+            motion:layout_constraintLeft_toLeftOf="parent"
+            motion:layout_constraintRight_toRightOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintVertical_chainStyle="packed"
+            motion:met_floatingLabel="highlight" />
+
+        <Constraint
+            android:id="@id/idTooglePasswordInputType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/big_spacing"
+            android:layout_marginRight="@dimen/big_spacing"
+            android:alpha="0"
+            android:background="@android:color/transparent"
+            motion:layout_constraintBottom_toBottomOf="@+id/metPassword"
+            motion:layout_constraintRight_toRightOf="parent"
+            motion:layout_constraintTop_toTopOf="@+id/metPassword"
+            motion:srcCompat="@drawable/ic_visibility_off_black_24dp" />
+
+        <Constraint
+            android:id="@id/metPassword"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/big_spacing"
+            android:layout_marginBottom="8dp"
+            android:layout_weight="1"
+            android:alpha="0"
+            android:visibility="invisible"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintHorizontal_chainStyle="packed"
+            motion:layout_constraintLeft_toLeftOf="parent"
+            motion:layout_constraintRight_toLeftOf="@+id/idTooglePasswordInputType"
+            motion:layout_constraintTop_toBottomOf="@id/metLogin"
+            motion:layout_constraintVertical_chainStyle="packed"
+            motion:met_floatingLabel="highlight" />
+
+        <Constraint
+            android:id="@id/idArrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:rotation="0"
+            motion:layout_constraintBottom_toBottomOf="@+id/btnSignInTest"
+            motion:layout_constraintEnd_toStartOf="@+id/btnSignInTest"
+            motion:layout_constraintTop_toTopOf="@+id/btnSignInTest"
+            motion:srcCompat="@drawable/ic_keyboard_arrow_right_black_24dp" />
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+
+        <Constraint
+            android:id="@id/btnSignInTest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toBottomOf="@+id/metPassword" />
+
+        <Constraint
+            android:id="@id/metLogin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/big_spacing"
+            android:layout_marginRight="@dimen/big_spacing"
+            android:alpha="1"
+            motion:layout_constraintBottom_toTopOf="@+id/metPassword"
+            motion:layout_constraintLeft_toLeftOf="parent"
+            motion:layout_constraintRight_toRightOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintVertical_chainStyle="packed"
+            motion:met_floatingLabel="highlight" />
+
+        <Constraint
+            android:id="@id/idTooglePasswordInputType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/big_spacing"
+            android:layout_marginRight="@dimen/big_spacing"
+            android:alpha="1"
+            android:background="@android:color/transparent"
+            motion:layout_constraintBottom_toBottomOf="@+id/metPassword"
+            motion:layout_constraintRight_toRightOf="parent"
+            motion:layout_constraintTop_toTopOf="@+id/metPassword"
+            motion:srcCompat="@drawable/ic_visibility_off_black_24dp" />
+
+        <Constraint
+            android:id="@id/metPassword"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/big_spacing"
+            android:layout_marginBottom="8dp"
+            android:layout_weight="1"
+            android:alpha="1"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintHorizontal_chainStyle="packed"
+            motion:layout_constraintLeft_toLeftOf="parent"
+            motion:layout_constraintRight_toLeftOf="@+id/idTooglePasswordInputType"
+            motion:layout_constraintTop_toBottomOf="@+id/metLogin"
+            motion:layout_constraintVertical_chainStyle="packed"
+            motion:met_floatingLabel="highlight" />
+
+        <Constraint
+            android:id="@id/idArrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:rotation="90"
+            motion:layout_constraintBottom_toTopOf="@+id/metLogin"
+            motion:layout_constraintEnd_toEndOf="@+id/metLogin"
+            motion:layout_constraintStart_toStartOf="@+id/metLogin"
+            motion:srcCompat="@drawable/ic_keyboard_arrow_right_black_24dp" />
+    </ConstraintSet>
+
+</MotionScene>
