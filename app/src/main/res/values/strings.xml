@@ -176,5 +176,15 @@
     <string name="beender_sign_in_two">Beender sign in two</string>
     <string name="simple_example">Простой пример</string>
     <string name="erc">ЕРЦ</string>
+    <string name="start">start</string>
+    <string name="g">g</string>
+    <string name="o">o</string>
+    <string name="l">l</string>
+    <string name="e">e</string>
+    <string name="i">I</string>
+    <string name="slash">/</string>
+    <string name="big_o">O</string>
+    <string name="year">18</string>
+    <string name="hash">#</string>
 
 </resources>

@@ -11,6 +11,7 @@
     <color name="vk">#507299</color>
     <color name="facebook">#3b5998</color>
 
+
     <color name="divider">#616161</color>
     <color name="color_grey">#89000000</color>
     <color name="color_orange">#ff5800</color>
@@ -18,4 +19,8 @@
     <color name="light_blue">#a6bde9</color>
 
     <color name="disable_white">#b2ffffff</color>
+
+    <color name="google_blue">#108BDE</color>
+    <color name="google_orange">#FF8C00</color>
+    <color name="google_green">#008000</color>
 </resources>
