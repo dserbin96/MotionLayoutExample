@@ -5,8 +5,7 @@
     <Transition
         motion:constraintSetEnd="@id/end"
         motion:constraintSetStart="@id/start"
-        motion:duration="1000"
-        motion:interpolator="linear">
+        motion:duration="1000">
         <OnSwipe
             motion:dragDirection="dragRight"
             motion:touchAnchorId="@id/imageView"
@@ -16,8 +15,8 @@
     <ConstraintSet android:id="@+id/start">
         <Constraint
             android:id="@id/imageView"
-            android:layout_width="64dp"
-            android:layout_height="64dp"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
             android:layout_marginStart="8dp"
             motion:layout_constraintBottom_toBottomOf="parent"
             motion:layout_constraintStart_toStartOf="parent"
@@ -31,8 +30,8 @@
     <ConstraintSet android:id="@+id/end">
         <Constraint
             android:id="@id/imageView"
-            android:layout_width="64dp"
-            android:layout_height="64dp"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
             android:layout_marginStart="8dp"
             motion:layout_constraintBottom_toBottomOf="parent"
             motion:layout_constraintEnd_toEndOf="parent"

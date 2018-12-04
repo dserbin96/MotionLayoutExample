@@ -7,7 +7,7 @@ import com.example.danilserbin.motionlayoutexample.example.beender.BeenderSignIn
 import com.example.danilserbin.motionlayoutexample.example.beender.BeenderSignInTwoActivity
 import com.example.danilserbin.motionlayoutexample.example.erc.ERCMenuActivity
 import com.example.danilserbin.motionlayoutexample.example.erc.ERCSignInActivity
-import com.example.danilserbin.motionlayoutexample.example.simple.SimpleActivity
+import com.example.danilserbin.motionlayoutexample.test.two.ColorTwoActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -44,7 +44,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun showSimpleExample() {
-        startActivity((Intent(this, SimpleActivity::class.java)))
+        startActivity((Intent(this, ColorTwoActivity::class.java)))
     }
 
 }
