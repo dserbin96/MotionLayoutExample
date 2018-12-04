@@ -3,6 +3,7 @@ package com.example.danilserbin.motionlayoutexample
 import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
+import android.widget.Toast
 import com.example.danilserbin.motionlayoutexample.example.beender.BeenderSignInActivity
 import com.example.danilserbin.motionlayoutexample.example.beender.BeenderSignInTwoActivity
 import com.example.danilserbin.motionlayoutexample.example.erc.ERCMenuActivity
@@ -25,6 +26,8 @@ class MainActivity : AppCompatActivity() {
         btnBeenderSignIn.setOnClickListener { showBeenderSignIn() }
 
         btnBeenderSignInTwo.setOnClickListener { showBeenderSignInTwo() }
+
+        btnStart.setOnClickListener { showStart() }
     }
 
     private fun showERCSignIn() {
@@ -45,6 +48,10 @@ class MainActivity : AppCompatActivity() {
 
     private fun showSimpleExample() {
         startActivity((Intent(this, ColorTwoActivity::class.java)))
+    }
+
+    private fun showStart() {
+        Toast.makeText(this, "Start", Toast.LENGTH_LONG).show()
     }
 
 }
